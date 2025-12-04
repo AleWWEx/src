@@ -1,4 +1,3 @@
-// === Данные ===
 const moviesList = [
   { title: 'Интерстеллар', year: 2014 },
   { title: 'Начало', year: 2010 },
