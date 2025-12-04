@@ -8,8 +8,24 @@
     body {
       font-family: sans-serif;
       max-width: 600px;
-      margin: 40px auto;
+      margin: 20px auto;
       padding: 0 16px;
+    }
+    .tabs {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+    .tab-btn {
+      padding: 8px 16px;
+      border: none;
+      background: #e0e0e0;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .tab-btn.active {
+      background: #007bff;
+      color: white;
     }
     .movie {
       display: flex;
@@ -28,12 +44,21 @@
       cursor: pointer;
       font-size: 16px;
     }
+    #movies-container {
+      min-height: 100px;
+    }
   </style>
 </head>
 <body>
   <h1>Мои фильмы</h1>
+
+  <div class="tabs">
+    <button id="show-all" class="tab-btn active">Все фильмы</button>
+    <button id="show-liked" class="tab-btn">Понравившиеся</button>
+  </div>
+
   <div id="movies-container"></div>
 
-  <script src="index.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
