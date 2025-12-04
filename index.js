@@ -8,6 +8,4 @@ const moviesList = [
   { title: 'Властелин колец: Братство кольца', year: 2001 }
 ];
 
-const app = new MovieApp('movies-container', moviesList);
-
-window.__movieApp = app;
+new MovieApp('movies-container', moviesList);
